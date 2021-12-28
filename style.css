@@ -221,6 +221,9 @@ margin-left: -12px !important;;
 
 .details-col {
     width: calc(70% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* .info-col {
@@ -251,11 +254,12 @@ margin-left: -12px !important;;
     border: solid 1px #2d63a3;
     filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.7));
     border-radius: 3px;
+    flex-grow: 1;
 }
 
 .meal-instructions {
     display: block;
-    max-height: 525px;
+    max-height: 575px;
     overflow: hidden;
     overflow-y: auto
 }
@@ -288,6 +292,11 @@ margin-left: -12px !important;;
     border-top: solid 1px #dad9d9;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.meal-ingredients.info-inner {
+    max-height: 600px;
+    overflow: auto;
 }
 
 .info-col>.info-inner>ul>li:first-of-type:not(:only-of-type) {
